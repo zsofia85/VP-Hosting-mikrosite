@@ -1,8 +1,8 @@
 let options = {
-    "controls": false, 
+    "controls": true, 
     "autoplay": true, 
     "preload": "auto", 
     "muted": true
 };
 
-videojs('Your Healthy Lunch', options);
+videojs('YourHealthyLunch', options);
