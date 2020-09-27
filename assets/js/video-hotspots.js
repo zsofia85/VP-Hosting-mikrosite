@@ -1,4 +1,5 @@
 //hotspots
+// REF: JS by Dan Høegh UCN MMD 2020
 
 const fps = 30;
 const debug = false;
