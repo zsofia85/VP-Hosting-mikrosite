@@ -136,7 +136,28 @@ let video = {
 
 const hotspots = [
 //vegan icon click
-
+{
+    active: true,
+    videoId: "video1",
+    markIn: 2,
+    markOut: 6,
+    sizeX: 50,
+    sizeY: 50,
+    posX: 0,
+    posY: 0,
+    ui: {
+        pause: true,
+        type: "box",
+        style:
+            `
+            border: none; 
+            background-color: rgba(0,0,0,.1)
+            `,
+    },
+    hotspot: {
+        type: "function",
+    }
+},
 
 
 //info hover
