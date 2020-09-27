@@ -1,14 +1,14 @@
 let options = {
     "controls": true, 
-    "autoplay": true, 
+    "autoplay": false, 
     "preload": "auto", 
     "muted": true
 };
 
-videojs('YourHealthyLunch', options);
+videojs('video1', options);
 
 
-const elmVideo = document.querySelector('#YourHealthyLunch > video');
+const elmVideo = document.querySelector('#video1 > video');
 
 const elmStatus = document.querySelector('#status');
 elmVideo.addEventListener('play', (event) => {
@@ -18,9 +18,9 @@ elmVideo.addEventListener('play', (event) => {
 
 
 //Balsamic glazed vegetables button
-const elmJumpTo30 = document.querySelector('#veganskip');
-const funcJumpTo30 = () => {
-    elmVideo.currentTime = 30;
+const elmJumpTo82 = document.querySelector('#btnveganskip');
+const funcJumpTo82 = () => {
+    elmVideo.currentTime = 82;
 }
-elmJumpTo20.addEventListener('click', funcJumpTo30);
+elmJumpTo82.addEventListener('click', funcJumpTo82);
 
