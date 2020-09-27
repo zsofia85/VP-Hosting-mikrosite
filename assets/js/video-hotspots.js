@@ -191,17 +191,14 @@ const hotspots = [
     ui: {
         type: "box",
         title: "Step 2",
-        style:
-            `
-            border: none; 
+        style: `border: none; 
             background-color: rgba(255,0,0,.5); 
             display: flex; 
             justify-content: center; 
             align-items: center; 
             text-decoration: none; 
             font-size: 2vw; 
-            color: white;
-            `,
+            color: white;`,
         text: "This is text in a box"
     },
     hotspot: {

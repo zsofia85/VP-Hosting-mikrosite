@@ -8,7 +8,6 @@ let options = {
 videojs('video1', options);
 
 
-
 //Balsamic roasted vegetables button
 const elmVideo = document.querySelector('#video1 > video');
 const elmJumpTo82 = document.querySelector('#btnveganskip');
