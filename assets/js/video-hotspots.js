@@ -135,12 +135,13 @@ let video = {
 
 
 const hotspots = [
-//vegan icon click
+
+    //vegan icon click
 {
     active: true,
     videoId: "video1",
-    markIn: 2,
-    markOut: 6,
+    markIn: 77,
+    markOut: 60,
     sizeX: 50,
     sizeY: 50,
     posX: 0,
@@ -148,42 +149,205 @@ const hotspots = [
     ui: {
         pause: true,
         type: "box",
-        style:
-            `
-            border: none; 
-            background-color: rgba(0,0,0,.1)
-            `,
+        style: `border: none; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            text-decoration: none; 
+            font-size: 2vw;
+        text: "woop"`
     },
     hotspot: {
-        type: "function",
+        type: "link",
+        url: "http://tv2.dk",
+        //func:  = () => {
+        //}
     }
 },
 
 
 //info hover
+{
+    active: true,
+    videoId: "video1",
+    markIn: 82,
+    markOut: 86,
+    sizeX: 20,
+    sizeY: 10,
+    posX: 0,
+    posY: 0,
+    ui: {
+        type: "box",
+        title: "Step 2",
+        style: `border: none; 
+            background-color: rgba(255,0,0,.5); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            text-decoration: none; 
+            font-size: 2vw; 
+            color: white;`,
+        text: "This is text in a box"
+    },
+    hotspot: {
+        type: "link",
+        url: "http://tv2.dk",
+        target: "_blank"
+    }
+},
 
+{
+    active: true,
+    videoId: "video1",
+    markIn: 82,
+    markOut: 86,
+    sizeX: 20,
+    sizeY: 10,
+    posX: 0,
+    posY: 0,
+    ui: {
+        type: "box",
+        title: "Step 2",
+        style: `border: none; 
+            background-color: rgba(255,0,0,.5); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            text-decoration: none; 
+            font-size: 2vw; 
+            color: white;`,
+        text: "This is text in a box"
+    },
+    hotspot: {
+        type: "link",
+        url: "http://tv2.dk",
+        target: "_blank"
+    }
+},
+
+{
+    active: true,
+    videoId: "video1",
+    markIn: 82,
+    markOut: 86,
+    sizeX: 20,
+    sizeY: 10,
+    posX: 0,
+    posY: 0,
+    ui: {
+        type: "box",
+        title: "Step 2",
+        style: `border: none; 
+            background-color: rgba(255,0,0,.5); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            text-decoration: none; 
+            font-size: 2vw; 
+            color: white;`,
+        text: "This is text in a box"
+    },
+    hotspot: {
+        type: "link",
+        url: "http://tv2.dk",
+        target: "_blank"
+    }
+},
 
 
 //ingredients
-
-
+{
+    active: true,
+    videoId: "video1",
+    markIn: 87,
+    markOut: 90,
+    sizeX: 50,
+    sizeY: 50,
+    posX: 0,
+    posY: 0,
+    ui: {
+        pause: true,
+        type: "box",
+        title: "Step 2",
+        style: `border: none; 
+            background-color: rgba(255,0,0,.5); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            text-decoration: none; 
+            font-size: 2vw; 
+            color: white;`,
+        text: "This is text in a box"
+    },
+    hotspot: {
+        type: "link",
+        url: "http://tv2.dk",
+        target: "_blank"
+    }
+},
 
 
 //continue button
-
+{
+    active: true,
+    videoId: "video1",
+    markIn: 87,
+    markOut: 90,
+    sizeX: 20,
+    sizeY: 40,
+    posX: 0,
+    posY: 0,
+    ui: {
+        type: "image",
+        style: "`border: none;",
+        image: "assets/img/btnContinueWHITE.png",
+    },
+    hotspot: {
+        type: "link",
+        url: "http://tv2.dk",
+        target: "_blank"
+    }
+},
 
 
 //instructions
 
 
 //step 1
-
+{
+    active: true,
+    videoId: "video1",
+    markIn: 91,
+    markOut: 98,
+    sizeX: 50,
+    sizeY: 50,
+    posX: 0,
+    posY: 0,
+    ui: {
+        type: "box",
+        title: "Step 2",
+        style: `border: none; 
+            background-color: rgba(255,0,0,.5); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            text-decoration: none; 
+            font-size: 2vw; 
+            color: white;`,
+        text: "This is text in a box"
+    },
+    hotspot: {
+        type: "link",
+        url: "http://tv2.dk",
+        target: "_blank"
+    }
+},
 //step 2
 {
     active: true,
     videoId: "video1",
-    markIn: 2,
-    markOut: 6,
+    markIn: 98,
+    markOut: 143,
     sizeX: 50,
     sizeY: 50,
     posX: 0,
@@ -208,9 +372,90 @@ const hotspots = [
     }
 },
 //step 3
-
+{
+    active: true,
+    videoId: "video1",
+    markIn: 143,
+    markOut: 154,
+    sizeX: 50,
+    sizeY: 50,
+    posX: 0,
+    posY: 0,
+    ui: {
+        type: "box",
+        title: "Step 2",
+        style: `border: none; 
+            background-color: rgba(255,0,0,.5); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            text-decoration: none; 
+            font-size: 2vw; 
+            color: white;`,
+        text: "This is text in a box"
+    },
+    hotspot: {
+        type: "link",
+        url: "http://tv2.dk",
+        target: "_blank"
+    }
+},
 //step 4
-
+{
+    active: true,
+    videoId: "video1",
+    markIn: 154,
+    markOut: 177,
+    sizeX: 50,
+    sizeY: 50,
+    posX: 0,
+    posY: 0,
+    ui: {
+        type: "box",
+        title: "Step 2",
+        style: `border: none; 
+            background-color: rgba(255,0,0,.5); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            text-decoration: none; 
+            font-size: 2vw; 
+            color: white;`,
+        text: "This is text in a box"
+    },
+    hotspot: {
+        type: "link",
+        url: "http://tv2.dk",
+        target: "_blank"
+    }
+},
 //step 5
-
+{
+    active: true,
+    videoId: "video1",
+    markIn: 177,
+    markOut: 180,
+    sizeX: 50,
+    sizeY: 50,
+    posX: 0,
+    posY: 0,
+    ui: {
+        type: "box",
+        title: "Step 2",
+        style: `border: none; 
+            background-color: rgba(255,0,0,.5); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            text-decoration: none; 
+            font-size: 2vw; 
+            color: white;`,
+        text: "This is text in a box"
+    },
+    hotspot: {
+        type: "link",
+        url: "http://tv2.dk",
+        target: "_blank"
+    }
+},
 ]
