@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document 
-Zsofia Csagoly - mmdi 0919
-Personal Portfolio_V1 */
+VP Your Healthy Lunch,
+UCN - sept. 2020 */
 
 * {
     box-sizing: border-box;
@@ -15,14 +15,12 @@ Personal Portfolio_V1 */
     --text-light: #FFFFF0;
     --text-original: rgb(0, 66, 80);
     --text-footer: rgb(204, 217, 220);
-    --shadow: #808080;
     --button: rgb(247, 64, 58);
     --primary-font: 'Roboto', sans-serif;
     --p-font: monospace;
     --space-small: 1rem;
     --space-medium: 2rem;
     --space-large: 3rem;
-    /*letter-spacing: 0.1em;*/
 }
 
 html, body {
