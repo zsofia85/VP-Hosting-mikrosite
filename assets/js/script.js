@@ -6,10 +6,10 @@ let options = {
 };
 
 videojs('video1', options);
+video.hotspots.init();
 
 
 const elmVideo = document.querySelector('#video1 > video');
-
 const elmStatus = document.querySelector('#status');
 elmVideo.addEventListener('play', (event) => {
     elmStatus.innerHTML = 'Play';
@@ -17,7 +17,7 @@ elmVideo.addEventListener('play', (event) => {
 
 
 
-//Balsamic glazed vegetables button
+//Balsamic roasted vegetables button
 const elmJumpTo82 = document.querySelector('#btnveganskip');
 const funcJumpTo82 = () => {
     elmVideo.currentTime = 82;
