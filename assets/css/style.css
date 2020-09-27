@@ -193,6 +193,7 @@ button {
     border: var(--button);
     height: 45px;
     width: 272px;
+    cursor: pointer;
 } 
     
 .button-a {
