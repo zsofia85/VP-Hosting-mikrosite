@@ -121,15 +121,14 @@ let video = {
         },
         remove: () => {
             video.log('video hotspot engine: cleanup');
-            video.hotspots.off();                                               // turn off engine
-            const elmsHotspots = document.querySelectorAll('a.hotspot');        // find all hotspot DOM elements
-            elmsHotspots.forEach((elmHotspot) => {                              // loop through hotspots
-                elmHotspot.parentElement.removeChild(elmHotspot);               // remove current hotspot
+            video.hotspots.off(); 
+            const elmsHotspots = document.querySelectorAll('a.hotspot');
+            elmsHotspots.forEach((elmHotspot) => {
+                elmHotspot.parentElement.removeChild(elmHotspot);
             });
-            delete video;                                                       // remove the variable from memory
-            delete hotspots;                                                    // remove the variable from memory
+            delete video;
+            delete hotspots;
         }
-
     }
 }
 
@@ -140,58 +139,87 @@ const hotspots = [
 {
     active: true,
     videoId: "video1",
-    markIn: 77,
-    markOut: 60,
-    sizeX: 50,
-    sizeY: 50,
-    posX: 0,
-    posY: 0,
+    markIn: 78.38,
+    markOut: 78.42,
+    sizeX: 45,
+    sizeY: 45,
+    posX: -0.2,
+    posY: 33,
     ui: {
         pause: true,
-        type: "box",
-        style: `border: none; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            text-decoration: none; 
-            font-size: 2vw;
-        text: "woop"`
+        type: "image",
+        style: "`border: none;",
+        image: "assets/img/btnCircleRED.png",
     },
     hotspot: {
-        type: "link",
-        url: "http://tv2.dk",
-        //func:  = () => {
-        //}
+        type: "function",
     }
 },
 
+{
+    active: true,
+    videoId: "video1",
+    markIn: 78.38,
+    markOut: 78.42,
+    sizeX: 15,
+    sizeY: 15,
+    posX: 80,
+    posY: 83,
+    ui: {
+        pause: true,
+        type: "image",
+        style: "`border: none;",
+        image: "assets/img/btnAnywhereContinue.png",
+    },
+    hotspot: {
+        type: "function",
+    }
+},
+
+
+
+//info continue
+{
+    active: true,
+    videoId: "video1",
+    markIn: 79,
+    markOut: 79.15,
+    sizeX: 15,
+    sizeY: 15,
+    posX: 80,
+    posY: 83,
+    ui: {
+        pause: true,
+        type: "image",
+        style: "`border: none;",
+        image: "assets/img/btnAnywhereContinue.png",
+    },
+    hotspot: {
+        type: "function",
+    }
+},
 
 //info hover
 {
     active: true,
     videoId: "video1",
-    markIn: 82,
-    markOut: 86,
-    sizeX: 20,
-    sizeY: 10,
-    posX: 0,
-    posY: 0,
+    markIn: 79,
+    markOut: 79.15,
+    sizeX: 23,
+    sizeY: 9,
+    posX: 74,
+    posY: 16,
     ui: {
         type: "box",
-        title: "Step 2",
-        style: `border: none; 
-            background-color: rgba(255,0,0,.5); 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            text-decoration: none; 
-            font-size: 2vw; 
-            color: white;`,
-        text: "This is text in a box"
+        title: "info",
+        style: `
+        border: none; 
+        background-color: rgba(0,0,0,0)
+        `,
     },
     hotspot: {
         type: "link",
-        url: "http://tv2.dk",
+        url: "assets/info.html",
         target: "_blank"
     }
 },
@@ -199,28 +227,23 @@ const hotspots = [
 {
     active: true,
     videoId: "video1",
-    markIn: 82,
-    markOut: 86,
-    sizeX: 20,
-    sizeY: 10,
-    posX: 0,
-    posY: 0,
+    markIn: 79,
+    markOut: 79.15,
+    sizeX: 23,
+    sizeY: 9,
+    posX: 74,
+    posY: 41,
     ui: {
         type: "box",
-        title: "Step 2",
-        style: `border: none; 
-            background-color: rgba(255,0,0,.5); 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            text-decoration: none; 
-            font-size: 2vw; 
-            color: white;`,
-        text: "This is text in a box"
+        title: "info",
+        style: `
+        border: none; 
+        background-color: rgba(0,0,0,0)
+        `,
     },
     hotspot: {
         type: "link",
-        url: "http://tv2.dk",
+        url: "assets/info.html",
         target: "_blank"
     }
 },
@@ -228,146 +251,99 @@ const hotspots = [
 {
     active: true,
     videoId: "video1",
-    markIn: 82,
-    markOut: 86,
-    sizeX: 20,
-    sizeY: 10,
-    posX: 0,
-    posY: 0,
+    markIn: 79,
+    markOut: 79.15,
+    sizeX: 23,
+    sizeY: 9,
+    posX: 74,
+    posY: 65,
     ui: {
         type: "box",
-        title: "Step 2",
-        style: `border: none; 
-            background-color: rgba(255,0,0,.5); 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            text-decoration: none; 
-            font-size: 2vw; 
-            color: white;`,
-        text: "This is text in a box"
+        title: "info",
+        style: `
+        border: none; 
+        background-color: rgba(0,0,0,0)
+        `,
     },
     hotspot: {
         type: "link",
-        url: "http://tv2.dk",
+        url: "assets/info.html",
         target: "_blank"
     }
 },
 
+//ingredient continue
+{
+    active: true,
+    videoId: "video1",
+    markIn: 79.30,
+    markOut: 79.45,
+    sizeX: 15,
+    sizeY: 15,
+    posX: 80,
+    posY: 83,
+    ui: {
+        pause: true,
+        type: "image",
+        style: "`border: none;",
+        image: "assets/img/btnAnywhereContinueWHITE.png",
+    },
+    hotspot: {
+        type: "function",
+    }
+},
 
 //ingredients
 {
     active: true,
     videoId: "video1",
-    markIn: 87,
-    markOut: 90,
-    sizeX: 50,
-    sizeY: 50,
-    posX: 0,
-    posY: 0,
+    markIn: 79.30,
+    markOut: 79.45,
+    sizeX: 58,
+    sizeY: 58,
+    posX: 70,
+    posY: 18,
     ui: {
         pause: true,
-        type: "box",
-        title: "Step 2",
-        style: `border: none; 
-            background-color: rgba(255,0,0,.5); 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            text-decoration: none; 
-            font-size: 2vw; 
-            color: white;`,
-        text: "This is text in a box"
-    },
-    hotspot: {
-        type: "link",
-        url: "http://tv2.dk",
-        target: "_blank"
-    }
-},
-
-
-//continue button
-{
-    active: true,
-    videoId: "video1",
-    markIn: 87,
-    markOut: 90,
-    sizeX: 20,
-    sizeY: 40,
-    posX: 0,
-    posY: 0,
-    ui: {
         type: "image",
         style: "`border: none;",
-        image: "assets/img/btnContinueWHITE.png",
+        image: "assets/img/RecipeText.png",
     },
     hotspot: {
-        type: "link",
-        url: "http://tv2.dk",
-        target: "_blank"
+        type: "function",
     }
 },
 
 
 //instructions
-
-
 //step 1
-{
-    active: true,
-    videoId: "video1",
-    markIn: 91,
-    markOut: 98,
-    sizeX: 50,
-    sizeY: 50,
-    posX: 0,
-    posY: 0,
-    ui: {
-        type: "box",
-        title: "Step 2",
-        style: `border: none; 
-            background-color: rgba(255,0,0,.5); 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            text-decoration: none; 
-            font-size: 2vw; 
-            color: white;`,
-        text: "This is text in a box"
-    },
-    hotspot: {
-        type: "link",
-        url: "http://tv2.dk",
-        target: "_blank"
-    }
-},
 //step 2
 {
     active: true,
     videoId: "video1",
-    markIn: 98,
-    markOut: 143,
-    sizeX: 50,
-    sizeY: 50,
+    markIn: 88,
+    markOut: 131.30,
+    sizeX: 20,
+    sizeY: 100,
     posX: 0,
     posY: 0,
     ui: {
         type: "box",
         title: "Step 2",
         style: `border: none; 
-            background-color: rgba(255,0,0,.5); 
+            background-color: rgba(355,355,355,1); 
             display: flex; 
             justify-content: center; 
             align-items: center; 
             text-decoration: none; 
-            font-size: 2vw; 
-            color: white;`,
-        text: "This is text in a box"
+            text-align: left;
+            font-size: 1.5vw; 
+            color: rgba(248,69,57,1);`,
+        text: "2. Scrub or peel the carrots and parsnips, then slice them into 1-inch pieces. Wash the mushrooms and cut them in half. Peel the onion and slice it into 1-inch wide wedges. Wash the radishes, cut off their stems and roots, then slice each one in half."
     },
     hotspot: {
         type: "link",
-        url: "http://tv2.dk",
+        url: "assets/info.html",
         target: "_blank"
     }
 },
@@ -375,28 +351,29 @@ const hotspots = [
 {
     active: true,
     videoId: "video1",
-    markIn: 143,
-    markOut: 154,
-    sizeX: 50,
-    sizeY: 50,
+    markIn: 131.30,
+    markOut: 142,
+    sizeX: 20,
+    sizeY: 100,
     posX: 0,
     posY: 0,
     ui: {
         type: "box",
-        title: "Step 2",
+        title: "Step 3",
         style: `border: none; 
-            background-color: rgba(255,0,0,.5); 
+            background-color: rgba(355,355,355,1); 
             display: flex; 
             justify-content: center; 
             align-items: center; 
             text-decoration: none; 
-            font-size: 2vw; 
-            color: white;`,
-        text: "This is text in a box"
+            text-align: left;
+            font-size: 1.5vw; 
+            color: rgba(248,69,57,1);`,
+        text: "3. Spread the prepared vegetables out over a large baking sheet, making sure they're in a single layer and no piled on top one another. Pour the balsamic marinade over top, then toss the vegetables until they're all well coated."
     },
     hotspot: {
         type: "link",
-        url: "http://tv2.dk",
+        url: "assets/info.html",
         target: "_blank"
     }
 },
@@ -404,57 +381,29 @@ const hotspots = [
 {
     active: true,
     videoId: "video1",
-    markIn: 154,
-    markOut: 177,
-    sizeX: 50,
-    sizeY: 50,
+    markIn: 151,
+    markOut: 160,
+    sizeX: 20,
+    sizeY: 100,
     posX: 0,
     posY: 0,
     ui: {
         type: "box",
-        title: "Step 2",
+        title: "Step 3",
         style: `border: none; 
-            background-color: rgba(255,0,0,.5); 
+            background-color: rgba(355,355,355,1); 
             display: flex; 
             justify-content: center; 
             align-items: center; 
             text-decoration: none; 
-            font-size: 2vw; 
-            color: white;`,
-        text: "This is text in a box"
+            text-align: left;
+            font-size: 1.5vw; 
+            color: rgba(248,69,57,1);`,
+        text: "4.  Carefully remove the baking sheet from the oven, give the vegetables a good stir, then return them to the oven and roast for an additional 15-20 minutes, or until the vegetables are tender and have browned on the edges."
     },
     hotspot: {
         type: "link",
-        url: "http://tv2.dk",
-        target: "_blank"
-    }
-},
-//step 5
-{
-    active: true,
-    videoId: "video1",
-    markIn: 177,
-    markOut: 180,
-    sizeX: 50,
-    sizeY: 50,
-    posX: 0,
-    posY: 0,
-    ui: {
-        type: "box",
-        title: "Step 2",
-        style: `border: none; 
-            background-color: rgba(255,0,0,.5); 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            text-decoration: none; 
-            font-size: 2vw; 
-            color: white;`,
-        text: "This is text in a box"
-    },
-    hotspot: {
-        type: "link",
-        url: "http://tv2.dk",
+        url: "assets/info.html",
         target: "_blank"
     }
 },
